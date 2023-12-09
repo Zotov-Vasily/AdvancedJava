@@ -52,7 +52,20 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CalculationOfBodyCoordinates">
+  <component name="RunManager" selected="Application.CalculatingVehicleSpeed">
+    <configuration name="CalculatingVehicleSpeed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RepetitionOfTheCoveredMaterial.UsingBasicOperators.CalculatingVehicleSpeed" />
+      <module name="AdvancedJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RepetitionOfTheCoveredMaterial.UsingBasicOperators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculationOfBodyCoordinates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RepetitionOfTheCoveredMaterial.UsingBasicOperators.CalculationOfBodyCoordinates" />
       <module name="AdvancedJava" />
@@ -75,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculatingVehicleSpeed" />
         <item itemvalue="Application.CalculationOfBodyCoordinates" />
         <item itemvalue="Application.Test" />
       </list>
@@ -101,7 +115,7 @@
       <workItem from="1701796901206" duration="2862000" />
       <workItem from="1701881877306" duration="3477000" />
       <workItem from="1702118505946" duration="2098000" />
-      <workItem from="1702120634705" duration="626000" />
+      <workItem from="1702120634705" duration="2765000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1700313748831</created>
@@ -124,7 +138,28 @@
       <option name="project" value="LOCAL" />
       <updated>1702120976745</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Calculated the flight of a body thrown at an angle to the horizontal.">
+      <created>1702121282660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702121282660</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Calculated the flight of a body thrown at an angle to the horizontal.">
+      <created>1702121428358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702121428358</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Calculated the flight of a body thrown at an angle to the horizontal.">
+      <created>1702121633971</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702121633971</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
