@@ -8,7 +8,7 @@ public class CalculationOfBodyCoordinates {
         double m = 0.1;        // масса тела (в кг.)
         double gamma = 0.1;    // коэффициент сопротивлени я воздуха (Н*с/м)
         double V = 100.0;      // скорость тела (м/с)
-        double t = 1.0;        // время (в сек.)
+        double t = 1.1;        // время (в сек.)
         double x, y;           // координаты тела (в метрах)
         alpha /= 180 / PI;     // перевод градусов в радианы
 
