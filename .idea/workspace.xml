@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="Created the WordCounterHashSet class.&#10;The class defines a method countUniqueWords, which accepts text and returns the number of unique words in this text.&#10;The internal method used a HashSet to store unique words.&#10;Split text with words, omitting punctuation and registration.&#10;After processing the text, I displayed a lot of unique words on the screen.">
+    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="Created the UniqueSymbolsCounterHashSet class.&#10;The class defines a method countUniqueCharacters, which takes characters and retrieves the number of unique characters in it.&#10;Used HashSet to store unique characters.&#10;When counting unique characters, case is ignored (that is, 'a' and 'A' are counted as one character).&#10;Returned the number of unique characters in the string.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvancedJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedJava.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,32 +37,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;,
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Application.UniqueSymbolsCounterHashSet">
-    <configuration name="InventoryManagerHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.InventoryManagerHashMap" />
+}]]></component>
+  <component name="RunManager" selected="Application.OrderTest">
+    <configuration name="Order" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.EqualsAndHashCode.Order" />
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
+          <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.EqualsAndHashCode.OrderTest" />
+      <module name="AdvancedJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,20 +92,7 @@
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.TreeMapExample" />
-      <module name="AdvancedJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
+          <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,7 +105,7 @@
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
+          <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,7 +118,7 @@
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
+          <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UniqueSymbolsCounterHashSet" />
-        <item itemvalue="Application.WordCounterHashSet" />
-        <item itemvalue="Application.TreeMapAdvertising" />
-        <item itemvalue="Application.TreeMapExample" />
-        <item itemvalue="Application.InventoryManagerHashMap" />
+        <item itemvalue="Application.OrderTest" />
+        <item itemvalue="Application.JavaCollectionsFramework.EqualsAndHashCode.Order" />
+        <item itemvalue="Application.JavaCollectionsFramework.UniqueSymbolsCounterHashSet" />
+        <item itemvalue="Application.JavaCollectionsFramework.WordCounterHashSet" />
+        <item itemvalue="Application.JavaCollectionsFramework.TreeMapAdvertising" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +169,9 @@
       <workItem from="1704993812779" duration="2176000" />
       <workItem from="1705949582623" duration="1482000" />
       <workItem from="1706035191299" duration="946000" />
-      <workItem from="1707153609942" duration="2087000" />
+      <workItem from="1707153609942" duration="2284000" />
+      <workItem from="1707240794427" duration="68000" />
+      <workItem from="1707654689956" duration="2625000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1700313748831</created>
@@ -268,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707154285401</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Created the UniqueSymbolsCounterHashSet class.&#10;The class defines a method countUniqueCharacters, which takes characters and retrieves the number of unique characters in it.&#10;Used HashSet to store unique characters.&#10;When counting unique characters, case is ignored (that is, 'a' and 'A' are counted as one character).&#10;Returned the number of unique characters in the string.">
+      <created>1707155901656</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707155901656</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +314,7 @@
     <MESSAGE value="Created the InventoryManagerHashMap class, which contains a HashMap for storing information about products in the store.&#10;The keys are the names of the products (strings), and the values are the number of units of each product (integers).&#10;&#10;Implemented methods:&#10;&#10;addToInventory(String itemName, int quantity): Add the specified quantity of an item to inventory.&#10;SellItem(String itemName, int quantity): Calculates the specified quantity of an item from inventory when selling.&#10;&#10;I made sure that the quantity of the product does not become negative.&#10;getInventory(): Returns the current inventory as a HashMap.&#10;In the main method I wrote a simple program that makes your InventoryManagerHashMap work. Created a few products, added them to inventory, sold a few units, and then displayed the current inventory." />
     <MESSAGE value="The Student class was created following the rules:&#10;&#10;name (student name) of type String.&#10;grade (student grade) of type int.&#10;Created a TreeMap named StudentMap, where the key is the student's name and the value is the student's grade.&#10;&#10;Wrote the addStudent method to add a new student to the TreeMap. The method takes the student's name and his measuring instrument and writes the corresponding entry into the TreeMap.&#10;&#10;Wrote the getTopStudent method to get the name of the first student from TreeMap.&#10;&#10;Wrote a printStudentMap method to calculate the TreeMap score in the console.&#10;&#10;Created a protest class object and added some students, made a list of students and got the first student." />
     <MESSAGE value="Created the WordCounterHashSet class.&#10;The class defines a method countUniqueWords, which accepts text and returns the number of unique words in this text.&#10;The internal method used a HashSet to store unique words.&#10;Split text with words, omitting punctuation and registration.&#10;After processing the text, I displayed a lot of unique words on the screen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the WordCounterHashSet class.&#10;The class defines a method countUniqueWords, which accepts text and returns the number of unique words in this text.&#10;The internal method used a HashSet to store unique words.&#10;Split text with words, omitting punctuation and registration.&#10;After processing the text, I displayed a lot of unique words on the screen." />
+    <MESSAGE value="Created the UniqueSymbolsCounterHashSet class.&#10;The class defines a method countUniqueCharacters, which takes characters and retrieves the number of unique characters in it.&#10;Used HashSet to store unique characters.&#10;When counting unique characters, case is ignored (that is, 'a' and 'A' are counted as one character).&#10;Returned the number of unique characters in the string." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the UniqueSymbolsCounterHashSet class.&#10;The class defines a method countUniqueCharacters, which takes characters and retrieves the number of unique characters in it.&#10;Used HashSet to store unique characters.&#10;When counting unique characters, case is ignored (that is, 'a' and 'A' are counted as one character).&#10;Returned the number of unique characters in the string." />
   </component>
 </project>
