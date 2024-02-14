@@ -1,14 +1,13 @@
 package JavaCollectionsFramework;
 
-import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
 
-class Student {
+class Student1 {
     String name;
     int grade;
 
-    public Student(String name, int grade) {
+    public Student1(String name, int grade) {
         this.name = name;
         this.grade = grade;
     }
