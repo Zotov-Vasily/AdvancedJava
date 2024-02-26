@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="">
+    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.RestaurantDemo">
+  <component name="RunManager" selected="Application.TestIteratorAndIterable">
     <configuration name="OrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.EqualsAndHashCode.OrderTest" />
       <module name="AdvancedJava" />
@@ -78,7 +78,7 @@
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
+          <option name="PATTERN" value="JavaCollectionsFramework.Student" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,6 +88,19 @@
     </configuration>
     <configuration name="StudentSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.StudentSorting" />
+      <module name="AdvancedJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaCollectionsFramework.Student" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestIteratorAndIterable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.TestIteratorAndIterable" />
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
@@ -104,20 +117,7 @@
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCounterHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.WordCounterHashSet" />
-      <module name="AdvancedJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
+          <option name="PATTERN" value="JavaCollectionsFramework.Student" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,9 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RestaurantDemo" />
-        <item itemvalue="Application.StudentSorting" />
-        <item itemvalue="Application.TreeMapExample" />
+        <item itemvalue="Application.TestIteratorAndIterable" />
         <item itemvalue="Application.OrderTest" />
       </list>
     </recent_temporary>
@@ -171,7 +169,8 @@
       <workItem from="1707240794427" duration="68000" />
       <workItem from="1707654689956" duration="2664000" />
       <workItem from="1707928300061" duration="1503000" />
-      <workItem from="1708450052807" duration="522000" />
+      <workItem from="1708450052807" duration="753000" />
+      <workItem from="1708968674801" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1700313748831</created>
@@ -306,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707929798653</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue.">
+      <created>1708450799703</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708450799703</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +345,7 @@
     <MESSAGE value="An application for tracking orders in an online store.&#10;&#10;Created the Order class, which represents an order.&#10;The order contains the following characteristics:&#10;&#10;orderId (order ID, number value)&#10;customerName(customername, string)&#10;totalAmount (total order amount, real number)&#10;&#10;Overridden the Equals() and hashCode() methods to correctly compare objects such as Order.&#10;Two order conditions if their order matches.&#10;&#10;Then I wrote tests to check the correct operation of the overridden methods.&#10;&#10;In this case, the main() method runs the testEquals() and testHashCode() methods, which check that the Equals() and hashCode() methods are working correctly.&#10;Test results are output to the console." />
     <MESSAGE value="Student1" />
     <MESSAGE value="The StudentSorting class has been implemented, which has the following characteristics:&#10;Student name (name) of type String.&#10;Average score (averageGrade) of double type.&#10;Implement the Comparable&lt;Student&gt; interface, which will allow you to compare students by their GPA.&#10;Also, to be able to sort in sequential order, the Comparator&lt;Student&gt; interface is implemented, which is used to sort students in different contexts.&#10;Ensure that students are sorted in descending order of their GPA." />
-    <option name="LAST_COMMIT_MESSAGE" value="The StudentSorting class has been implemented, which has the following characteristics:&#10;Student name (name) of type String.&#10;Average score (averageGrade) of double type.&#10;Implement the Comparable&lt;Student&gt; interface, which will allow you to compare students by their GPA.&#10;Also, to be able to sort in sequential order, the Comparator&lt;Student&gt; interface is implemented, which is used to sort students in different contexts.&#10;Ensure that students are sorted in descending order of their GPA." />
+    <MESSAGE value="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue." />
   </component>
 </project>
