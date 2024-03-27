@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue.">
+    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="Implemented the Schoolboy class to represent information about schoolchildren, as well as the SchoolboyList class, which represents a list of schoolchildren and has the ability to iterate over it using an iterator.&#10;&#10;Implemented the Schoolboy class with the name and age fields, as well as the SchoolboyList class, which is a list of Schoolboy objects.&#10;&#10;The SchoolboyList class implements the Iterable&lt;Schoolboy&gt; interface so that its objects can be used in a for-each loop.&#10;Also in this class there is a method addSchoolboy(Schoolboy schoolboy), which adds a student to the list.&#10;&#10;In addition, in the SchoolboyList class I implemented the nested SchoolboyIterator class, which implements the Iterator&lt;Schoolboy&gt; interface.&#10;This iterator allows you to iterate through a list of students, starting from the first element to the last.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,26 +59,13 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.TestIteratorAndIterable">
+  <component name="RunManager" selected="Application.ThreadSynchronization">
     <configuration name="OrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.EqualsAndHashCode.OrderTest" />
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="JavaCollectionsFramework.EqualsAndHashCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestaurantDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.RestaurantDemo" />
-      <module name="AdvancedJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaCollectionsFramework.Student" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadSynchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaMultithreading.ThreadSynchronization" />
+      <module name="AdvancedJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaMultithreading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TreeMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaCollectionsFramework.TreeMapExample" />
       <module name="AdvancedJava" />
@@ -127,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadSynchronization" />
         <item itemvalue="Application.TestIteratorAndIterable" />
         <item itemvalue="Application.OrderTest" />
       </list>
@@ -171,6 +172,8 @@
       <workItem from="1707928300061" duration="1503000" />
       <workItem from="1708450052807" duration="753000" />
       <workItem from="1708968674801" duration="2081000" />
+      <workItem from="1708971790972" duration="215000" />
+      <workItem from="1711558201963" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1700313748831</created>
@@ -312,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708450799703</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implemented the Schoolboy class to represent information about schoolchildren, as well as the SchoolboyList class, which represents a list of schoolchildren and has the ability to iterate over it using an iterator.&#10;&#10;Implemented the Schoolboy class with the name and age fields, as well as the SchoolboyList class, which is a list of Schoolboy objects.&#10;&#10;The SchoolboyList class implements the Iterable&lt;Schoolboy&gt; interface so that its objects can be used in a for-each loop.&#10;Also in this class there is a method addSchoolboy(Schoolboy schoolboy), which adds a student to the list.&#10;&#10;In addition, in the SchoolboyList class I implemented the nested SchoolboyIterator class, which implements the Iterator&lt;Schoolboy&gt; interface.&#10;This iterator allows you to iterate through a list of students, starting from the first element to the last.">
+      <created>1708971990034</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1708971990034</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +356,7 @@
     <MESSAGE value="Student1" />
     <MESSAGE value="The StudentSorting class has been implemented, which has the following characteristics:&#10;Student name (name) of type String.&#10;Average score (averageGrade) of double type.&#10;Implement the Comparable&lt;Student&gt; interface, which will allow you to compare students by their GPA.&#10;Also, to be able to sort in sequential order, the Comparator&lt;Student&gt; interface is implemented, which is used to sort students in different contexts.&#10;Ensure that students are sorted in descending order of their GPA." />
     <MESSAGE value="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a RestaurantQueue class that has methods:&#10;takeOrder(String order): insert an order into the queue.&#10;serveOrder(): Processes one by one, serving orders in the order they are received.&#10;Implemented the RestaurantDemo class, which powers your program. Several orders have been created for this class and assigned to them one by one. The serveOrder() method was then called to process the queue." />
+    <MESSAGE value="Implemented the Schoolboy class to represent information about schoolchildren, as well as the SchoolboyList class, which represents a list of schoolchildren and has the ability to iterate over it using an iterator.&#10;&#10;Implemented the Schoolboy class with the name and age fields, as well as the SchoolboyList class, which is a list of Schoolboy objects.&#10;&#10;The SchoolboyList class implements the Iterable&lt;Schoolboy&gt; interface so that its objects can be used in a for-each loop.&#10;Also in this class there is a method addSchoolboy(Schoolboy schoolboy), which adds a student to the list.&#10;&#10;In addition, in the SchoolboyList class I implemented the nested SchoolboyIterator class, which implements the Iterator&lt;Schoolboy&gt; interface.&#10;This iterator allows you to iterate through a list of students, starting from the first element to the last." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Schoolboy class to represent information about schoolchildren, as well as the SchoolboyList class, which represents a list of schoolchildren and has the ability to iterate over it using an iterator.&#10;&#10;Implemented the Schoolboy class with the name and age fields, as well as the SchoolboyList class, which is a list of Schoolboy objects.&#10;&#10;The SchoolboyList class implements the Iterable&lt;Schoolboy&gt; interface so that its objects can be used in a for-each loop.&#10;Also in this class there is a method addSchoolboy(Schoolboy schoolboy), which adds a student to the list.&#10;&#10;In addition, in the SchoolboyList class I implemented the nested SchoolboyIterator class, which implements the Iterator&lt;Schoolboy&gt; interface.&#10;This iterator allows you to iterate through a list of students, starting from the first element to the last." />
   </component>
 </project>
