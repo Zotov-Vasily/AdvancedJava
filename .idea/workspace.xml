@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="A CommonResource with a field x that is modified by each thread. Threads are represented by the CountThread class, which receives a semaphore and performs some actions on the resource. In the main class of the program, these threads are launched." />
+    <list default="true" id="823fe9e0-ddc2-46c4-b3b3-88cd974c2b1b" name="Changes" comment="The classic problem about lunching philosophers.&#10;There are five philosophers, but no more than two can sit at the table at a time.&#10;I implemented it in such a way that all the philosophers would have lunch, but there would be no deadlock between the philosophers in the fight for the plate and fork.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,9 +59,9 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.SecondSem">
-    <configuration name="FirstSem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaMultithreading.FirstSem" />
+  <component name="RunManager" selected="Application.DeadlockTest">
+    <configuration name="DeadlockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaMultithreading.DeadlockTest" />
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
@@ -71,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerConsumerCustomSync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaMultithreading.ProducerConsumerCustomSync" />
+    <configuration name="FirstSem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaMultithreading.FirstSem" />
       <module name="AdvancedJava" />
       <extension name="coverage">
         <pattern>
@@ -119,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeadlockTest" />
         <item itemvalue="Application.SecondSem" />
         <item itemvalue="Application.FirstSem" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Race" />
-        <item itemvalue="Application.ProducerConsumerCustomSync" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +179,8 @@
       <workItem from="1714380458550" duration="878000" />
       <workItem from="1715439410058" duration="504000" />
       <workItem from="1715707572108" duration="1618000" />
-      <workItem from="1715793737486" duration="3883000" />
+      <workItem from="1715793737486" duration="4094000" />
+      <workItem from="1716121843498" duration="3109000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1700313748831</created>
@@ -354,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715797247085</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="The classic problem about lunching philosophers.&#10;There are five philosophers, but no more than two can sit at the table at a time.&#10;I implemented it in such a way that all the philosophers would have lunch, but there would be no deadlock between the philosophers in the fight for the plate and fork.">
+      <created>1715797851480</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715797851480</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +403,7 @@
     <MESSAGE value="The producer thread puts 1000 elements into the list.&#10;If the queue is full, then I call wait() until it becomes free.&#10;After the element is added, I call notify() on it so that the consuming thread waiting for the elements to be freed knows that there is already something to consume.&#10;&#10;The consumer thread runs in daemon mode under while(true) and stops if it receives a poison pill (it's just the last element).&#10;As in the first case, if the queue is empty, then wait() is called until the situation changes.&#10;After the element is used, I call notify() on it so that the producer thread (perhaps waiting for the queue to fill) knows that there is now free space to add at least one element." />
     <MESSAGE value="Conducted a car race.&#10;Five cars take part in the race.&#10;&#10;Each of the five cars approached the starting line;&#10;The command “Start!” was given;&#10;The command “Attention!” was given;&#10;The command “March!” was given.&#10;It is important that all cars start at the same time." />
     <MESSAGE value="A CommonResource with a field x that is modified by each thread. Threads are represented by the CountThread class, which receives a semaphore and performs some actions on the resource. In the main class of the program, these threads are launched." />
-    <option name="LAST_COMMIT_MESSAGE" value="A CommonResource with a field x that is modified by each thread. Threads are represented by the CountThread class, which receives a semaphore and performs some actions on the resource. In the main class of the program, these threads are launched." />
+    <MESSAGE value="The classic problem about lunching philosophers.&#10;There are five philosophers, but no more than two can sit at the table at a time.&#10;I implemented it in such a way that all the philosophers would have lunch, but there would be no deadlock between the philosophers in the fight for the plate and fork." />
+    <option name="LAST_COMMIT_MESSAGE" value="The classic problem about lunching philosophers.&#10;There are five philosophers, but no more than two can sit at the table at a time.&#10;I implemented it in such a way that all the philosophers would have lunch, but there would be no deadlock between the philosophers in the fight for the plate and fork." />
   </component>
 </project>
